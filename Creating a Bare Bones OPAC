@@ -1,0 +1,23 @@
+**Creating the HTML Page and a PHP Search Page**
+
+# What is happening
+1. We make an HTM file
+2. make a search page that activates our PHP file
+3. PHP file connects to the database
+4. returns custom search quarries
+
+## What to do 
+0. Check if login.php has correct credentials
+1. create HTML file
+2. copy paste
+3. chage IP Address
+4. Save
+5. Create PHP file
+6. 
+
+to see in my sql tables
+''
+select * from books;
+''
+
+ChatGPT A great Source 
