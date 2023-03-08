@@ -1,0 +1,12 @@
+Creating a page that ccreates data in our database mysql
+adding security mesures such as passord and username protection
+Adds records in a cataloging html page
+
+1. cd /var/www/html location
+2. create directory (nano)
+3. create indexfile HTML (nano)
+4. create PHP
+5 create insert.html
+6. create password
+7. modify apache2 apache2.conf (AllowOverride All)
+8. Add password restriction box by making a file called .htaccess
