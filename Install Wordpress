@@ -1,0 +1,19 @@
+WordPress is a free and open source content management system (CMS). Originally, 
+its focus was on providing a platform for blogging, but throughout the last decade plus, 
+it has become a general purpose CMS that can serve as a website builder.
+
+1. Make sure it meets requierments
+ - php --version
+ - mysql --version
+2. cd /var/www/html (navigate)
+3. sudo wget https://wordpress.org/latest.tar.gz (download)
+4. sudo tar -xzvf latest.tar.gz (extract)
+5. Sudo su 
+6. mysql -u root (login to mysql)
+7. create user 'wordpress'@'localhost' identified by 'XXXXXXXXX'; (create a new user)
+8. create database wordpress; (create database)
+9. grant all privileges on wordpress.* to 'wordpress'@'localhost'; (allowing access)
+10. show databases; (double checking)
+12. cd /var/www/html/wordpress (navigating)
+13.sudo cp wp-config-sample.php wp-config.php (coping)
+14 sudo nano wp-config.php (editing login file)
