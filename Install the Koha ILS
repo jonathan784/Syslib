@@ -1,0 +1,50 @@
+Koha is an open source "library management system", otherwise called an integrated library system (ILS). These kinds of systems provide modules that perform specific kinds of functionality. Koha's modules include:
+
+Administration
+Patron management
+Cash management
+Circulation
+Cataloging
+Course reserves
+Serials
+Acquisitions
+Reports
+OPAC
+
+Install the Koha ILS Steps
+1.) Create new google instance machine
+2. Open FireWall by creating a rule in google cconsole
+3. open server in new terminal
+4. update with sudo apt update
+5. upgrade with sudo apt upgrade
+6. auto remove  and sudo clean (sudo apt autoremove -y && sudo apt clean)
+7. instal gnupg2 (sudo apt install gnupg2)
+8. reboot (sudo reboot now)
+9. create koha repositories (echo 'deb http://debian.koha-community.org/koha stable main' | sudo tee /etc/apt/sources.list.d/koha.list)
+10. create signiture to verify repo (wget -q -O- https://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -)
+11. update (apt update)
+12. install koha to server (apt install koha-common)
+
+Configure koha
+13.navigate to koha directory 
+14. open koha-sites.conf file (nano /etc/koha/koha-sites.conf)
+15. change "INTRAPORT="80"" to 8080
+16. install mysql server (apt install mysql-server)
+17. make a mysql root password (mysqladmin -u root password &*&*&**&#*^$&^)
+18. enable URL rewriting and CGI functionality. ("a2enmod rewrite", and "a2enmod cgi") 
+19. Restart apache2 (systemctl restart apache2)
+20. create a database (koha-create --create-db bibliolib)
+21. tell apache to listen to port 8080 (nano /etc/apache2/ports.conf)
+22. add line undeneath 80 "Listen 8080"
+23."We'll disable the default Apache2 setup, enable traffic compression using deflate, enable the bibliolib site, and then reload Apache2's configurations and restart again" 
+(a2dissite 000-default
+a2enmod deflate
+a2ensite bibliolib
+systemctl reload apache2
+systemctl restart apache2
+)
+24. obtaine user and pass (nano /etc/koha/sites/bibliolib/koha-conf.xml) ( <user>koha_bibliolib</user> <pass>1{{$)+w2ig(@1?nK</pass>)
+25.navigate to site with external ip:8080
+26. login 
+27. follow set up guide on browser username:john pass:78433435345
+28. when finished go more>OPAC> finr "OPACBaseURL" and past ip (http://00.00.000.000)
