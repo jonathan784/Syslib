@@ -1,0 +1,14 @@
+Apache is an HTTP server, otherwise called web server software. Other HTTP server software exists.
+
+*Installing the Apache Web Server*
+
+1. Update and upgarade system (sudo apt update , sudo apt -y upgrade)
+2. install appache2 (sudo apt install apache2)
+3. check system (systemctl list-unit-files apache2.service , systemctl status apache2)
+4. install w3m (sudo apt install w3m)
+5.check site (w3m localhost)
+6. move to htlm path (cd /var/www/html/)
+7. create new and renamed index.html (sudo mv index.html index.html.original)
+8. expand index.html (sudo nano index.html)
+9. Import basic HTML code that will be be shown to users/visitors on the site
+10. Visit HTML site created (http://00.000.00.000/index.html.original)
