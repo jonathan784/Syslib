@@ -1,0 +1,23 @@
+Client-side programming languages, like JavaScript, are handled by the browser.
+Major browsers like Firefox, Chrome, Safari, Edge, etc. all include JavaScript engines that use just-in-time compilers to execute JavaScript code.
+
+
+
+1. inatall libapache2-mod-php and restart system (sudo apt install php libapache2-mod-php, sudo systemctl restart apache2)
+2. navigate to html (cd /var/www/html/)
+3. create php file (sudo nano info.php)
+4. import php code (<?php phpinfo(); ?>)
+5. check site (http://55.333.55.333/info.php)
+6. navigate to appache2 mods-enabled path (cd /etc/apache2/mods-enabled/)
+7. create a copy of dir.conf (sudo cp dir.conf dir.conf.bak)
+8. go into dir.conf (sudo nano dir.conf)
+9. change the order in which the files are orginized to (DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm)
+10.reload and restart apache2 (sudo systemctl reload apache2 , sudo systemctl restart apache2)
+11. navigate to html path (cd /var/www/html/)
+12. create index.php (sudo nano index.php)
+13. import php code into index.php (php code)
+14. visit site with ip adressed
+
+
+
+
