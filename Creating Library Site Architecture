@@ -1,0 +1,35 @@
+Library Site Architecture
+
+Goal: link these together. WordPress, Omeka, and Koha to create a library ecosystem
+
+Wordpress "is a free and open-source content management system (CMS). Originally, its focus was on providing a platform for blogging, but throughout the last decade or so,
+It has become a general-purpose CMS that can serve as a website builder".
+
+Omeka"is an "open-source web publishing platform for sharing digital collections and creating media-rich online exhibits."
+
+Koha"is an open-source "library management system", otherwise called an integrated library system (ILS). These kinds of systems provide modules that perform specific kinds of functionality. Koha's modules include:
+Administration, patron management, cash management, circulation, cataloging, course reserves, serials, acquisitions, reports, and OPAC".
+
+
+Modifying Wordpress
+1. In the user's preferred browser, input http://104.154.39.20/wordpress/wp-admin/install.php," replacing the ip with the intended address.
+2. Sign in with the correct credentials.
+3. Select the "users" home page (view site in preview).
+4. Select "customize" at the top left of the page.
+5. Select Menu
+6. Select the menu that will be modified.
+7. Select "add item."
+8. Insert the correct URL for both Koha and Omeka with the corresponding label as well.
+9. Reorder in the desired order.
+10. Once all is set, select "publish" (this will save the work that has been done).
+
+Modifying Omeka
+1. In the user's preferred browser, input http://104.154.39.20/omeka/admin," replacing the ip with the attended address.
+2. Sign in with the correct credentials.
+3. Select "Appearance" in the top right
+4. Select the "Navigation" tab under Appearance.
+5. Input a label and URL into the "Add a Link to the Navigation" fields.
+6. Rearrange the global navigational options to the desired order.
+7. Select "Save Changes."
+8. Under "appearance," select "themes."
+9. Select the Seasons Theme (which will change the design of the site).
